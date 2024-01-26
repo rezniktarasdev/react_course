@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 30px;
+    border: 2px solid teal;
+    border-radius: 8px;
+}
+
+.post__btns {
+  display: flex;
+  margin-left: 5px;
+}
+
+.post__title {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.post-enter {
+    transform: translateX(-1000px);
+  }
+  .post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+  }
+  .post-exit {
+    opacity: 1;
+  }
+  .post-exit-active {
+    transform: translateX(-1000px);
+    transition: all 500ms ease-in;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .page_wrapper {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.page_current {
+  border: 2px solid orange;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.navbar {
+  height: 50px;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background: lightgray;
+}
+
+.navbar_links {
+  margin-left: auto;
+}
+
+.comment-card {
+  border: 1px solid #5cd8ce;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 30px;
+}
+
+.comment-card h5 {
+  margin-bottom: 5px;
+}
+
+.post-container h1 {
+  text-align: center;
+}
